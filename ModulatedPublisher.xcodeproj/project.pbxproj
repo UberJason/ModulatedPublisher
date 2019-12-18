@@ -10,6 +10,7 @@
 		9689E17523A9B74A008B960B /* ModulatedPublisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9689E16B23A9B74A008B960B /* ModulatedPublisher.framework */; };
 		9689E17A23A9B74A008B960B /* ModulatedPublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9689E17923A9B74A008B960B /* ModulatedPublisherTests.swift */; };
 		9689E17C23A9B74A008B960B /* ModulatedPublisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 9689E16E23A9B74A008B960B /* ModulatedPublisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9689E18623A9B755008B960B /* ModulatedPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9689E18523A9B755008B960B /* ModulatedPublisher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		9689E17423A9B74A008B960B /* ModulatedPublisherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModulatedPublisherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9689E17923A9B74A008B960B /* ModulatedPublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulatedPublisherTests.swift; sourceTree = "<group>"; };
 		9689E17B23A9B74A008B960B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9689E18523A9B755008B960B /* ModulatedPublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulatedPublisher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				9689E16E23A9B74A008B960B /* ModulatedPublisher.h */,
 				9689E16F23A9B74A008B960B /* Info.plist */,
+				9689E18523A9B755008B960B /* ModulatedPublisher.swift */,
 			);
 			path = ModulatedPublisher;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					9689E16A23A9B74A008B960B = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					9689E17323A9B74A008B960B = {
 						CreatedOnToolsVersion = 11.3;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9689E18623A9B755008B960B /* ModulatedPublisher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		9689E18023A9B74A008B960B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2GPQ8GE99T;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jyjapps.ModulatedPublisher;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		9689E18123A9B74A008B960B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2GPQ8GE99T;
@@ -388,6 +396,7 @@
 		9689E18323A9B74A008B960B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GPQ8GE99T;
 				INFOPLIST_FILE = ModulatedPublisherTests/Info.plist;
@@ -406,6 +415,7 @@
 		9689E18423A9B74A008B960B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GPQ8GE99T;
 				INFOPLIST_FILE = ModulatedPublisherTests/Info.plist;
